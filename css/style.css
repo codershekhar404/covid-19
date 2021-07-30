@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&family=Roboto:wght@300;400;500;700&family=Ubuntu:wght@300;400;500;700&display=swap");
+:root {
+    --width: 98.75vw;
+    --height: 100vh;
+    --ubuntu: "Ubuntu", sans-serif;
+    --roboto: "Roboto", sans-serif;
+    --poppins: "Poppins", sans-serif;
+    --box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    --box-shadow-hover: 1px 1px 17px 1px rgba(0, 0, 0, 0.16);
+    --blue-gradient: linear-gradient(315deg, #045de9 0%, #09c6f9 74%);
+    --yellow-gradient: linear-gradient(315deg, #ff4e00 0%, #ec9f05 74%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Utility properties */
+
+html {
+    font-size: 10px;
+    font-family: var(--roboto);
+    height: var(--height);
+}
+
+/* End Utility properties */
+
+.flex-container {
+    width: var(--width);
+    display: flex;
+    flex-direction: column;
+    margin-top: 5rem;
+    align-items: center;
+}
+
+.flex-container img {
+    width: 30rem;
+}
+
+.card {
+    display: flex;
+    justify-content: space-around;
+    width: 90rem;
+    margin: 0 auto;
+    margin-top: 5rem;
+}
+
+.flex-items {
+    padding: 4rem 3.4rem;
+    width: 35vw;
+    margin-right: 2rem;
+    box-shadow: var(--box-shadow);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    border: none;
+    border-radius: 0.5rem;
+}
+
+.flex-items:hover {
+    box-shadow: var(--box-shadow-hover);
+}
+
+.flex-items h1 {
+    font-size: 1.2rem;
+    color: rgba(0, 0, 0, 0.7);
+    font-weight: normal;
+    text-transform: uppercase;
+    font-family: var(--poppins);
+}
+
+.date-container {
+    font-size: 1.3rem;
+    color: rgba(0, 0, 0, 0.7);
+    margin: 1.2rem 0 0.5rem 0;
+}
+
+.para {
+    color: #111111;
+    font-size: 1.8rem;
+}
+
+.data {
+    font-size: 2.2rem;
+    font-weight: 500;
+    margin-top: .2rem;
+    font-family: var(--ubuntu);
+}
+
+.infected {
+    border-bottom: 10px solid rgba(0, 0, 255, 0.5);
+}
+
+.recovered {
+    border-bottom: 10px solid rgba(0, 255, 0, 0.5);
+}
+
+.deaths {
+    border-bottom: 10px solid rgba(255, 0, 0, 0.5);
+}
+
+#dropdown {
+    width: 30rem;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    border-bottom: 1px solid grey;
+    font-size: 1.6rem;
+    margin-top: 3rem;
+}
