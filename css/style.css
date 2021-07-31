@@ -31,8 +31,9 @@ html {
     width: var(--width);
     display: flex;
     flex-direction: column;
-    margin-top: 5rem;
+    margin: 5rem 0;
     align-items: center;
+    justify-content: center;
 }
 
 .flex-container img {
@@ -41,15 +42,12 @@ html {
 
 .card {
     display: flex;
-    justify-content: space-around;
-    width: 90rem;
-    margin: 0 auto;
+    width: 80vw;
     margin-top: 5rem;
 }
 
 .flex-items {
     padding: 4rem 3.4rem;
-    width: 35vw;
     margin-right: 2rem;
     box-shadow: var(--box-shadow);
     transition: all 0.3s ease-in-out;
@@ -98,6 +96,7 @@ html {
 
 .deaths {
     border-bottom: 10px solid rgba(255, 0, 0, 0.5);
+    margin-right: 0;
 }
 
 #dropdown {
@@ -106,6 +105,15 @@ html {
     border: none;
     cursor: pointer;
     border-bottom: 1px solid grey;
+    background: transparent;
     font-size: 1.6rem;
     margin-top: 3rem;
+}
+
+#dropdown:active,#dropdown:hover{
+    outline: none;
+    border: none;
+    border-bottom: 1px solid grey;
+    background: transparent;
+
 }
